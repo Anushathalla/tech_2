@@ -1,0 +1,64 @@
+  
+Feature: login functional flow
+
+Background: Background test
+Given User able to open the browser
+And User able to enter  the url
+When User able to enter the username
+And User able to  enter the password
+And User able to click on the submit button
+When User able to open the PIM
+
+@Tag(AddEmployeeinformation)
+Scenario OutLine:  verify Add employee details
+When User able to click on the Add button
+When User able to enter the first name "<first name>"
+When User able to enter the middle name "<middle name>"
+When User able to enter the last name "<last name>"
+And User able to click on the save button
+
+Examples:
+
+|First name| last name|
+|Anusha    |Anu       |
+
+@Tag(Personal add details)
+When user able to search on the valid EmployeeID
+Then verify user  able to valid address
+When user able to click on personal details
+When user able to enter the employee <full name>
+When user able to enter the employee  <middle name> 
+When user able to enter the employee <last name>
+When user able to enter the employee <employee Id>
+When user able to enter the <0therID>
+When user able to enter the  Drivers license number
+When user able to enter the  license  Expirydata
+And  user able to enter the  nationality
+And  user able to enter the  marital status
+When user able to enter the  Data of birth
+When user able to click on   the gender
+When user able to enter the  military services
+When user able to click on the smoke
+And  user able to click on the save
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+    
+    
+    
+    
+    
+ 
+ 
+    
+    
